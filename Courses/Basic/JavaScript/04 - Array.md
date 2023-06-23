@@ -1,3 +1,7 @@
+# Arrays
+
+---------> index.html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,16 +40,6 @@
     usuarios[0].nome = "Thiago Perez"
 
     console.log(usuarios)
-
-    const userOriginal = {
-        nome: "Thiago"
-    }
-
-    const cloneUser = userOriginal
-
-    cloneUser.nome = "Maria"
-
-    console.log(userOriginal.nome)
 </script>
 
 </html>
