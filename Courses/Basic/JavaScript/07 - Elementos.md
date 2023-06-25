@@ -18,7 +18,7 @@
 
     ----------> index.html
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,6 +31,7 @@
     <p class="paragrafo-js">Começando nossa Jornada</p>
     <p class="paragrafo-js">A linguagem de Prog...</p>
     <button class="principla-botao paragrafo-js">Clique aqui</button>
+    <img src="../CSS/img/gatinho.jpeg" alt="" srcset="">
 </body>
 <script src="./arquivo.js"></script>
 </html>
@@ -38,9 +39,9 @@
 --------------> arquivo.js
 
 //Pegando pelo ID
-const elemento = document.getElementById("principal-input")
+const elementoId = document.getElementById("principal-input")
 
-console.log(elemento)
+console.log(elementoId)
 
 //Pegando pela classe
 
@@ -69,3 +70,16 @@ console.log(elementoQuery)
 const elementosQueryAll = document.querySelectorAll("p")
 
 console.log(elementosQueryAll)
+
+// Alterando os elementos
+
+elementoId.placeholder = "Novo Placeholder"
+console.log(elementoId.placeholder)
+
+elementoId.value = "Novo Valor"
+console.log(elementoId)
+
+const imagem = document.querySelector("img")
+
+console.log(imagem)
+console.log(imagem.src)
